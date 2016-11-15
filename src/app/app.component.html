@@ -1,5 +1,4 @@
     <h1>{{title}}</h1>
-    <h2>My favorite Engineer is: {{myEng.name}}</h2>
     <p>Engineers:</p>
     <ul>
       <li *ngFor="let engineer of engineers">
@@ -8,6 +7,7 @@
     </ul>
 
     <div>
-      <button (click)="getEng($event)">Get Engineer</button>
+      <button (click)="getEng($event)">Pick an Engineer</button>
+      <span> {{ pickedEngineer }} </span>
     </div>
 

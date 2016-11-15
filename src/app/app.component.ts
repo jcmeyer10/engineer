@@ -18,8 +18,12 @@ export class AppComponent {
 
 
   getEng(){
+    var target = event.srcElement || event.currentTarget;
+    console.log(target);
+    var idAttr = target.attributes;
+    console.log(idAttr);
+
     var number = Math.random() * 100;
-    console.log(number);
 
     if (number > 0 &&  number <= 34) {
       var pickedEngineer = "Jim";
@@ -36,4 +40,3 @@ export class AppComponent {
     }
   }
   }
-}
