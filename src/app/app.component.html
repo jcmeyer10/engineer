@@ -1,5 +1,22 @@
     <h1>{{title}}</h1>
     <p>Engineers:</p>
+
+    <form addeng>
+    <label>
+    <span>Name</span>
+    <input
+      type="text"
+      name="name"
+      placeholder="Name">
+    </label>
+    <label>
+      <span>Times Picked</span>
+      <input
+        type="number"
+        name="number"
+        placeholder="Number">
+    </label>
+
     <ul>
       <li *ngFor="let engineer of engineers">
         <span>{{ engineer.name }} has been picked: {{ engineer.timesPicked }} times!</span>
