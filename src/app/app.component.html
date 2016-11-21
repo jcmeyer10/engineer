@@ -1,6 +1,28 @@
     <h1>{{title}}</h1>
     <p>Engineers:</p>
 
+    <form addeng>
+      <div>
+      <label>
+        <span>First Name: </span>
+        <input
+          type="text"
+          name="name"
+          placeholder="First Name">
+      </label>
+      <label>
+        <span>Times Picked: </span>
+        <input
+          type="number"
+          name="timesPicked"
+          placeholder="Times Picked">
+      </label>
+      <span>
+       <button type="submit">Add Engineer</button>
+      </span>
+    </div>
+    </form>
+
     <ul>
       <li *ngFor="let engineer of engineers">
         <span>{{ engineer.name }} has been picked: {{ engineer.timesPicked }} times!</span>
