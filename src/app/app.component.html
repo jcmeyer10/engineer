@@ -23,8 +23,8 @@
       </li>
     </ul>
 
-<div>
-   <button (click)="getEng()">Pick an Engineer</button>
-   <span> {{ myEng?.name}} </span>
-</div>
+    <div>
+      <button (click)="getEng($event)">Pick an Engineer</button>
+      {{ pickedEngineer }}
+    </div>
 

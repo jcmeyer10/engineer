@@ -17,19 +17,18 @@ export class AppComponent {
   myEng = this.engineers[0];
   pickedEngineer = '';
 
-getEng(){
+  getEng(){
 
-  var number = Math.random() * 100;
+    var number = Math.random() * 100;
 
-  if (number > 0 &&  number <= 34) {
-    this.myEng = this.engineers[0];
-    this.myEng.timesPicked++;
-  } else if (number > 34 && number <= 66 ){
-    this.myEng = this.engineers[1];
-    this.myEng.timesPicked++;
-  } else {
-    this.myEng = this.engineers[2];
-    this.myEng.timesPicked++;
+    if (number > 0 &&  number <= 34) {
+      var pickedEngineer = "Jim";
+    } else if (number > 34 && number <= 66 ){
+      var pickedEngineer = "John";
+    } else {
+      var pickedEngineer = "Bob";
+    }
+      this.pickedEngineer = pickedEngineer;
+      console.log(pickedEngineer);
   }
-}
   }
